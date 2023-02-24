@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "./static/css/main.23019c94.css",
+    "main.js": "./static/js/main.4893a768.js",
+    "static/js/225.492c57fb.chunk.js": "./static/js/225.492c57fb.chunk.js",
+    "static/media/Nunito-ExtraBold.ttf": "./static/media/Nunito-ExtraBold.dcfddfb7ee3436fa130b.ttf",
+    "static/media/Nunito-Light.ttf": "./static/media/Nunito-Light.545d04c96d939f25984c.ttf",
+    "static/media/Nunito-Black.ttf": "./static/media/Nunito-Black.17bcf6f7bd22f390c48d.ttf",
+    "static/media/Nunito-Bold.ttf": "./static/media/Nunito-Bold.5b67d635abb53cc261c5.ttf",
+    "static/media/Nunito-SemiBold.ttf": "./static/media/Nunito-SemiBold.45ea1be74e8fb8d959b8.ttf",
+    "static/media/Nunito-ExtraLight.ttf": "./static/media/Nunito-ExtraLight.671ec50911cf3a491f52.ttf",
+    "static/media/Nunito-Regular.ttf": "./static/media/Nunito-Regular.09b2f37e93bedfaa2976.ttf",
+    "static/media/semibold.otf": "./static/media/semibold.e0a2c7a72bd561af5d00.otf",
+    "static/media/light.otf": "./static/media/light.12b58260abc7e1c438ed.otf",
+    "static/media/bold.otf": "./static/media/bold.93af771e71f0d625f26c.otf",
+    "static/media/extra-bold.otf": "./static/media/extra-bold.b2908e7d3bb559041116.otf",
+    "static/media/extra-light.otf": "./static/media/extra-light.3ebd00e112e5661c2687.otf",
+    "static/media/regular.otf": "./static/media/regular.e3a4d8982627e2b17c58.otf",
+    "static/media/Manrope-ExtraBold.ttf": "./static/media/Manrope-ExtraBold.9228fb8db13b8386c8f7.ttf",
+    "static/media/Manrope-Medium.ttf": "./static/media/Manrope-Medium.4a88d55fa0d3fdbed00b.ttf",
+    "static/media/Manrope-Light.ttf": "./static/media/Manrope-Light.d03f265a9c222584a055.ttf",
+    "static/media/Manrope-SemiBold.ttf": "./static/media/Manrope-SemiBold.26ad6bf1def8d06b182c.ttf",
+    "static/media/Manrope-Regular.ttf": "./static/media/Manrope-Regular.82b079afb111983c04ef.ttf",
+    "static/media/Manrope-ExtraLight.ttf": "./static/media/Manrope-ExtraLight.adc4a7f402049acac77d.ttf",
+    "static/media/Manrope-Bold.ttf": "./static/media/Manrope-Bold.d109d6f81a8764425cf6.ttf",
+    "static/media/black.otf": "./static/media/black.9464b752b12fcb39ec2d.otf",
+    "static/media/logo.svg": "./static/media/logo.42b348411a84dd2b26a1b77e7b21a3ec.svg",
+    "index.html": "./index.html"
+  },
+  "entrypoints": [
+    "static/css/main.23019c94.css",
+    "static/js/main.4893a768.js"
+  ]
+}
