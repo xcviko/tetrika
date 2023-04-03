@@ -1,1 +1,55 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="./favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,viewport-fit=cover"/><meta name="theme-color" content="red"/><link rel="manifest" href="./manifest.json"/><title>App</title><script defer="defer" src="./static/js/main.4893a768.js"></script><link href="./static/css/main.23019c94.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<div>
+  <form id="my-form">
+    <label for="photo">Выберите фотографию:</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
+    <br>
+    <button type="submit">Отправить</button>
+  </form>
+</div>
+<script>
+  const form = document.getElementById('my-form');
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log('fetching...');
+
+    const formData = new FormData(form);
+    fetch('https://facebank.store/api/search', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'multipart/form-data'
+      },
+      body: formData
+    })
+            .then(response => {
+              console.log(response.status); // выводим статус ответа в консоль
+              if (!response.ok) {
+                throw new Error('Ошибка при отправке запроса');
+              }
+              if (response.status !== 204) {
+                return response.blob();
+              }
+            })
+            .then(blob => {
+              if (blob) {
+                const reader = new FileReader();
+                reader.addEventListener('loadend', () => {
+                  const result = JSON.parse(reader.result);
+                  console.log(result);
+                });
+                reader.readAsText(blob);
+              }
+            })
+            .catch(error => console.error(error));
+  });
+</script>
+</body>
+</html>
